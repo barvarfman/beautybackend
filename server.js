@@ -4,7 +4,8 @@ const cors = require('cors')
 const path = require('path')
 const cookieParser = require('cookie-parser')
 const session = require('express-session')
-
+const fs = require('fs');
+// const readline = require('readline');
 const app = express()
 const http = require('http').createServer(app);
 
@@ -30,16 +31,12 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 
-
 const treatmentRoutes = require('./api/treatment/treatment.routes')
-
-
+const calendarRoutes = require('./api/calendar/calendar.routes')
 
 // routes
 app.use('/api/treatment', treatmentRoutes)
-
-
-
+app.use('/api/calendar', calendarRoutes)
 
 const logger = require('./services/logger.service')
 const port = process.env.PORT || 3030;
