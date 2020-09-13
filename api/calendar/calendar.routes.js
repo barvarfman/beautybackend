@@ -4,8 +4,6 @@ const express = require('express')
 const {getCalendar} = require('./calendar.controller')
 const router = express.Router()
 
-// middleware that is specific to this router
-// router.use(requireAuth)
 
 router.get('/', getCalendar)
 // router.put('/:id',updateCalendar)
