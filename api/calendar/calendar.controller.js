@@ -35,5 +35,5 @@ module.exports = {
     getCalendars,
     deleteCalendar,
     updateCalendar,
-    addCalendar
+    // addCalendar
 }
