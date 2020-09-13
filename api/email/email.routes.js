@@ -1,8 +1,7 @@
 const express = require('express')
-const {getCalendar} = require('./calendar.controller')
+const { postEmail} = require('./email.controller')
 const router = express.Router()
 
-
-router.get('/', getCalendar)
+router.post('/', postEmail)
 
 module.exports = router

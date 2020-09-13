@@ -33,10 +33,12 @@ if (process.env.NODE_ENV === 'production') {
 
 const treatmentRoutes = require('./api/treatment/treatment.routes')
 const calendarRoutes = require('./api/calendar/calendar.routes')
+const emailRoutes = require('./api/email/email.routes')
 
 // routes
 app.use('/api/treatment', treatmentRoutes)
 app.use('/api/calendar', calendarRoutes)
+app.use('/api/email', emailRoutes)
 
 const logger = require('./services/logger.service')
 const port = process.env.PORT || 3030;
