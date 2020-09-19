@@ -71,7 +71,7 @@ async function update(treatment) {
 }
 
 async function add(treatment) {
-    const collection = await dbService.getCollection('treatments')
+    const collection = await dbService.getCollection('treatment')
     try {
         await collection.insertOne(treatment);
         return treatment;
