@@ -8,7 +8,7 @@ const router = express.Router()
 // router.get('/', getCalendar);
 router.get('/:phone', getEvent);
 router.post('/', addEvent);
-router.delete('/:id', removeEvent)
+router.delete('/:id', removeEvent);
 // router.post('/', getEvent);
 // router.put('/:id',updateCalendar)
 
