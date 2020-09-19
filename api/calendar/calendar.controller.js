@@ -36,14 +36,7 @@ async function getEvent(req, res) {
 
 module.exports = {
     getCalendar,
-<<<<<<< HEAD
-    getCalendars,
-    deleteCalendar,
-    updateCalendar,
-    // addCalendar
-=======
     addEvent,
     getEvent,
     removeEvent
->>>>>>> 360e1c0f74544db64c8361dd061ca657e68b1372
 }
