@@ -22,7 +22,6 @@ var mailOptions = {
   text: ''
 };
 
-
 function SendMailP(emailObj){
     mailOptions.to=[emailObj.email,'barvartest@gmail.com']
     mailOptions.text=emailObj.bodyText
