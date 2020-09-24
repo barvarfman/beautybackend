@@ -23,7 +23,8 @@ var mailOptions = {
 };
 
 function SendMailP(emailObj){
-    mailOptions.to=[emailObj.email,'barvartest@gmail.com']
+  if(!emailObj.email)  mailOptions.to=['barvartest@gmail.com']
+   else mailOptions.to=[emailObj.email,'barvartest@gmail.com']
     mailOptions.text=emailObj.bodyText
 transporter.sendMail(mailOptions, function(error, info){
   if (error) {
